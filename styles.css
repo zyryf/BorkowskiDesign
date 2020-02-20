@@ -92,7 +92,7 @@ div.all.blur {
 
 .info .text h1 {
     font-size: 4rem;
-    border: 6px solid rgb(134, 191, 177);
+
     margin: 0 30px;
 }
 
@@ -473,7 +473,7 @@ header {
 
 
     .content button {
-        margin-top: 100px;
+        margin-top: 80px;
         font-size: 3rem;
         padding: 30px 80px;
         border: 2px solid black;
