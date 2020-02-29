@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+    $('.loader-wrapper').fadeOut(1000);
+})
+
+
 $("header button").click(function () {
     $('html,body').animate({
             scrollTop: $(".main").offset().top
