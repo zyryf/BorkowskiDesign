@@ -130,7 +130,7 @@ div.all.blur {
 }
 
 
-.moreIcon i.fa-info-circle.active {
+.moreIcon i.fa-envelope.active {
     transform: scale(0)
 }
 
@@ -200,29 +200,14 @@ div.all.blur {
     border-top: none;
 }
 
-.info form button {
-    background-color: rgba(0, 0, 0, 0.4);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    border: 2px solid black;
-    padding: 10px 20px;
-    width: 70%;
-    margin-top: 30px;
-    border-radius: 50px;
-    transition: .3s;
-}
 
-.info form button:hover {
-    cursor: pointer;
-    border-color: rgb(20, 126, 99);
-    color: white;
-}
 
 .info .contact {
     flex-basis: 10%;
     font-size: 1.5rem;
     border-top: 4px solid black;
     padding: 5px 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .info .contact i:nth-child(1) {
@@ -230,6 +215,7 @@ div.all.blur {
 }
 
 .info .contact i span {
+    font-family: 'Raleway', sans-serif;
     margin-left: 5px;
     font-weight: 100;
 }
@@ -246,12 +232,7 @@ div.all.blur {
 
     }
 
-    .info form button {
 
-        font-size: 1.4rem;
-        margin-top: 20px;
-
-    }
 }
 
 @media (min-width:768px) {
@@ -291,23 +272,9 @@ div.all.blur {
         height: 30%;
     }
 
-
-    .info form button {
-
-        font-size: 1.5rem;
-        margin-top: 20px;
-
-    }
 }
 
-@media (orientation:landscape) and (max-width:568px) {
-    .info form button {
 
-        font-size: 1.2rem;
-        margin-top: 10px;
-
-    }
-}
 
 
 
@@ -333,12 +300,6 @@ div.all.blur {
     }
 
 
-
-    .info form button {
-
-        width: 50%;
-
-    }
 
     .info .contact {
         width: 70%;
@@ -393,6 +354,7 @@ header {
     top: 0;
     animation: webDesignEffect 5s forwards;
     animation-iteration-count: 1;
+    animation-delay: .5s;
 
 
 }
@@ -712,14 +674,28 @@ header {
 
 .projects {
 
-
     background-color: #86BFB1;
-    height: 60vh;
-
-
 
 }
 
+.projects-wrapper {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project {
+
+    width: 30%;
+    box-shadow: 0 0 10px black;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+}
 
 
 .projects h1 {
@@ -736,10 +712,6 @@ header {
     border: 5px solid white;
     padding: 2px 10px 4px 10px;
     margin-left: 5px;
-
-
-
-
 }
 
 
@@ -761,6 +733,18 @@ header {
 @media (min-width:1200px) {
     .projects h1 {
         padding-top: 5vh;
+    }
+}
+
+@media (orientation:portrait) {
+    .projects-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 85%;
+        margin: 20px 0;
     }
 }
 

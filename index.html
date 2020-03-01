@@ -25,7 +25,7 @@
 
 
     <div class="moreIcon">
-        <i class="fas fa-info-circle"></i>
+        <i class="fas fa-envelope"></i>
         <i class="fas fa-home"></i>
     </div>
 
@@ -36,11 +36,11 @@
 
         </div>
 
-        <form action="">
-            <input type="text" placeholder="Twoje imię">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Treść wiadomości"></textarea>
-            <button class="sent">wyślij wiadomość</button>
+        <form action="https://formspree.io/xqkbdore" method="POST">
+            <input type="text" name='name' placeholder="Twoje imię" id='text-input' required>
+            <input type="email" name="_replyto" placeholder="Email" id='email-input' required>
+            <textarea placeholder="Treść wiadomości" id='message-input' name='message' required></textarea>
+            <input type="submit" class="submit-button" value="Wyślij"></button>
         </form>
 
         <div class="contact">
@@ -85,96 +85,117 @@
         <section class="projects clearfix">
 
             <h1>Moje <span>projekty.</span></h1>
-        </section>
 
-        <section class="about clearfix">
+            <div class='projects-wrapper'>
 
-            <wrapper class="rozwoj">
-                <div class="icon">
-                    <i class="fas fa-paint-brush"></i>
-                    <i class="fas fa-palette"></i>
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="text">
-                    <h1>Design</h1>
-                    <p> Odpowiedni design zapewni zawsze jak najlepsze wrażenia podczas przeglądania. Zastosowanie
-                        koncepcji
-                        UX/UI czyni stronę intuicyjną, przejrzystą oraz łatwą w obsłudze przez osoby w każdym wieku.
-                    </p>
-                </div>
-            </wrapper>
-
-            <wrapper class="responsywnosc">
-                <div class="icon">
-                    <i class="fas fa-laptop"></i>
-                    <i class="fas fa-mobile-alt"></i>
-                    <i class="fas fa-tv"></i>
-                </div>
-                <div class="text">
-                    <h1>Responsywność</h1>
-                    <p> Przeglądaj z wygodą Twoją stronę internetową na telefonie, laptopie czy też komputerze
-                        stacjonarnym.
-                        Dzięki standardom Responsive Web Design wyświetli się ona zawsze prawidłwo, klarownie i
-                        czytelnie.
-                    </p>
-                </div>
-            </wrapper>
-
-            <wrapper class="technologie">
-                <div class="icon">
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-html5"></i>
-
+                <div class="project">
+                    <a href="https://zyryf.github.io/AnalogPhotography/">
+                        <img src="images/project1.png" alt="project1">
+                    </a>
                 </div>
 
-                <div class="text">
-                    <h1>Technologie</h1>
-                    <p> Wsparcie najnowszych technologii oraz wykorzystanie odpowiednich narzędzi sprawia, że strona
-                        jest
-                        komaptyblina, dając możliwość łatwego nanoszenia poprawek czy też edycji komponentów na Twoje
-                        życzenie. </p>
+                <div class="project">
+                    <a href="https://zyryf.github.io/Tic-Tac-Toe-Game/">
+                        <img src="images/project2.png" alt="project1">
+                    </a>
                 </div>
 
-            </wrapper>
 
-        </section>
+            </div>
 
-        <section class="me clearfix">
-            <div class="image clearfix"><img src="images/portarit.png" alt="myPhoto"></div>
+    </div>
+    </section>
+
+    <section class="about clearfix">
+
+        <wrapper class="rozwoj">
+            <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+                <i class="fas fa-palette"></i>
+                <i class="fas fa-code"></i>
+            </div>
             <div class="text">
-                <h1>O mnie</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nisi recusandae a praesentium possimus
-                    minus
-                    illum ex excepturi, eaque eius blanditiis provident ipsa in libero nesciunt ratione, qui. Non,
-                    porro.
+                <h1>Design</h1>
+                <p> Odpowiedni design zapewni zawsze jak najlepsze wrażenia podczas przeglądania. Zastosowanie
+                    koncepcji
+                    UX/UI czyni stronę intuicyjną, przejrzystą oraz łatwą w obsłudze przez osoby w każdym wieku.
                 </p>
             </div>
-        </section>
+        </wrapper>
 
-        <footer>
-
-            <h5 class="rights">&copy; Copyright. All rights reserved.</h5>
-
-            <div class="phone"><i class="fas fa-phone-square"></i>
-                <p>510 694 812</p>
+        <wrapper class="responsywnosc">
+            <div class="icon">
+                <i class="fas fa-laptop"></i>
+                <i class="fas fa-mobile-alt"></i>
+                <i class="fas fa-tv"></i>
             </div>
-            <div class="mail"><i class="fas fa-envelope"></i>
-                <p>szymon.borkowski@gmail.com</p>
+            <div class="text">
+                <h1>Responsywność</h1>
+                <p> Przeglądaj z wygodą Twoją stronę internetową na telefonie, laptopie czy też komputerze
+                    stacjonarnym.
+                    Dzięki standardom Responsive Web Design wyświetli się ona zawsze prawidłwo, klarownie i
+                    czytelnie.
+                </p>
             </div>
-            <div class="fb"> <i class="fab fa-facebook-square"></i>
-                <p><a href="https://www.facebook.com/szymon.borkowski.9">Facebook</a></p>
+        </wrapper>
+
+        <wrapper class="technologie">
+            <div class="icon">
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-html5"></i>
 
             </div>
 
-            <div class="credits">Icons made by <a href="https://www.flaticon.com/authors/prosymbols"
-                    title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/"
-                    title="Flaticon">www.flaticon.com</a></div>
+            <div class="text">
+                <h1>Technologie</h1>
+                <p> Wsparcie najnowszych technologii oraz wykorzystanie odpowiednich narzędzi sprawia, że strona
+                    jest
+                    komaptyblina, dając możliwość łatwego nanoszenia poprawek czy też edycji komponentów na Twoje
+                    życzenie. </p>
+            </div>
+
+        </wrapper>
+
+    </section>
+
+    <section class="me clearfix">
+        <div class="image clearfix"><img src="images/portarit.png" alt="myPhoto"></div>
+        <div class="text">
+            <h1>O mnie</h1>
+            <p>Cześć! Jestem Szymon. Uwielbiam tworzyć nowe rzeczy - projektując strony internetowe łączę zmysł
+                estetyczny ze ścisłym umysłem oraz przekuwam swoją
+                pasję w pracę . Aktualnie studiuję Informatykę na Politechnice Wrocławskiej, a dodatkowo jestem
+                równiez instruktorem snowboardu oraz dużo podróżuję :) Do każdego podchodzę indywidualnie, więc
+                jeśli masz jakieś pytania napisz do mnie
+                poprzez formularz a na pewno się odezwę!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+
+        <h5 class="rights">&copy; Copyright. All rights reserved.</h5>
+
+        <div class="phone"><i class="fas fa-phone-square"></i>
+            <p>510 694 812</p>
+        </div>
+        <div class="mail"><i class="fas fa-envelope"></i>
+            <p>szymon.borkowski@gmail.com</p>
+        </div>
+        <div class="fb"> <i class="fab fa-facebook-square"></i>
+            <p><a href="https://www.facebook.com/szymon.borkowski.9">Facebook</a></p>
+
+        </div>
+
+        <div class="credits">Icons made by <a href="https://www.flaticon.com/authors/prosymbols"
+                title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a></div>
 
 
 
 
-        </footer>
+    </footer>
 
     </div>
 
